@@ -24,7 +24,7 @@ public class ServiceImplementationFactory {
         // create an instance of the implementation class
         Object object;
         try {
-            object = newClass.toClass().newInstance();
+            object = newClass.toClass().getDeclaredConstructor().newInstance();
         } catch (Exception e2) {
             throw new RuntimeException(e2);
         }
