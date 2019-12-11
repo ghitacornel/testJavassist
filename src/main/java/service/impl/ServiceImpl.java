@@ -11,8 +11,7 @@ public class ServiceImpl implements Service {
 
     @Override
     public String execute(String argument) {
-        String result = argument + " " + myField;
-        return result;
+        return argument + " " + myField;
     }
 
 }
